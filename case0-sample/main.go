@@ -2,10 +2,16 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func CountLength(a, b float32) float32 {
 	// write your code below
+	var c float32
+	c = float32(math.Sqrt(float64(a*a + b*b)))
+	return c
 }
 
 func main() {
